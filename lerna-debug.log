@@ -1,0 +1,1059 @@
+0 silly input [ 'prepare' ]
+1 silly flags {
+1 silly flags   _: [ 'run' ],
+1 silly flags   'reject-cycles': false,
+1 silly flags   rejectCycles: false,
+1 silly flags   script: 'prepare',
+1 silly flags   args: []
+1 silly flags }
+2 verbose rootPath /Users/ajdc/Sites/lab/che-theia
+3 info version 2.11.0
+4 silly existsSync /Users/ajdc/Sites/lab/che-theia/VERSION
+5 silly initialize attempt
+6 silly initialize success
+7 silly execute attempt
+8 silly runScriptInPackageStreaming [ 'prepare', [], '@eclipse-che/theia-generator' ]
+9 silly getExecOpts { cwd: '/Users/ajdc/Sites/lab/che-theia/generator' }
+10 silly runScriptInPackageStreaming [
+10 silly runScriptInPackageStreaming   'prepare',
+10 silly runScriptInPackageStreaming   [],
+10 silly runScriptInPackageStreaming   '@eclipse-che/theia-built-in-extensions-update-automation'
+10 silly runScriptInPackageStreaming ]
+11 silly getExecOpts { cwd: '/Users/ajdc/Sites/lab/che-theia/tools/automation' }
+12 silly runScriptInPackageStreaming [ 'prepare', [], '@eclipse-che/che-theia-devworkspace-handler' ]
+13 silly getExecOpts { cwd: '/Users/ajdc/Sites/lab/che-theia/tools/devworkspace-handler' }
+14 silly runScriptInPackageStreaming [
+14 silly runScriptInPackageStreaming   'prepare',
+14 silly runScriptInPackageStreaming   [],
+14 silly runScriptInPackageStreaming   '@eclipse-che/che-theia-hosted-plugin-manager-extension'
+14 silly runScriptInPackageStreaming ]
+15 silly getExecOpts {
+15 silly getExecOpts   cwd: '/Users/ajdc/Sites/lab/che-theia/extensions/che-theia-hosted-plugin-manager-extension'
+15 silly getExecOpts }
+16 silly runScriptInPackageStreaming [ 'prepare', [], '@eclipse-che/theia-dashboard-extension' ]
+17 silly getExecOpts {
+17 silly getExecOpts   cwd: '/Users/ajdc/Sites/lab/che-theia/extensions/eclipse-che-theia-dashboard'
+17 silly getExecOpts }
+18 silly runScriptInPackageStreaming [ 'prepare', [], '@eclipse-che/theia-file-sync-tracker' ]
+19 silly getExecOpts {
+19 silly getExecOpts   cwd: '/Users/ajdc/Sites/lab/che-theia/extensions/eclipse-che-theia-file-sync-tracker'
+19 silly getExecOpts }
+20 silly runScriptInPackageStreaming [ 'prepare', [], '@eclipse-che/theia-logging' ]
+21 silly getExecOpts {
+21 silly getExecOpts   cwd: '/Users/ajdc/Sites/lab/che-theia/extensions/eclipse-che-theia-logging'
+21 silly getExecOpts }
+22 silly runScriptInPackageStreaming [ 'prepare', [], '@eclipse-che/theia-plugin-ext' ]
+23 silly getExecOpts {
+23 silly getExecOpts   cwd: '/Users/ajdc/Sites/lab/che-theia/extensions/eclipse-che-theia-plugin-ext'
+23 silly getExecOpts }
+24 error execute callback with error
+25 error Error: Command failed: yarn run prepare
+25 error PASS tests/cdn/base.spec.ts (26.127 s)
+25 error PASS tests/cdn/html-template.spec.ts (26.327 s)
+25 error PASS tests/clean/clean.spec.ts
+25 error   ● Console
+25 error
+25 error     console.log
+25 error       Removing extension symbolic links...
+25 error
+25 error       at Clean.cleanCheTheia (src/clean.ts:31:17)
+25 error
+25 error     console.log
+25 error       Removing plugin symbolic links...
+25 error
+25 error       at Clean.cleanCheTheia (src/clean.ts:40:17)
+25 error
+25 error     console.log
+25 error       Removing plugins folder...
+25 error
+25 error       at Clean.cleanCheTheia (src/clean.ts:49:17)
+25 error
+25 error     console.log
+25 error       Removing extensions...
+25 error
+25 error       at Clean.cleanCheTheia (src/clean.ts:52:17)
+25 error
+25 error     console.log
+25 error       Removing assembly...
+25 error
+25 error       at Clean.cleanCheTheia (src/clean.ts:54:17)
+25 error
+25 error     console.log
+25 error       Removing "node_modules"...
+25 error
+25 error       at Clean.cleanCheTheia (src/clean.ts:58:17)
+25 error
+25 error PASS tests/yarn/yarn.spec.ts (26.899 s)
+25 error   ● Console
+25 error
+25 error     console.log
+25 error        --> Excluding the dependency js-tokens
+25 error
+25 error       at Function.debug (src/logger.ts:18:21)
+25 error           at Array.filter (<anonymous>)
+25 error           at Array.forEach (<anonymous>)
+25 error
+25 error PASS tests/init/init.spec.ts (27.067 s)
+25 error   ● Console
+25 error
+25 error     console.info
+25 error       copying /Users/ajdc/Sites/lab/che-theia/generator/src/templates/cdn to /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpInit15933Htp1euM9Qy91/examples/assembly/cdn
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error
+25 error     console.info
+25 error       distdir=/Users/ajdc/Sites/lab/che-theia/generator/dist
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error
+25 error Switched to a new branch 'main'
+25 error PASS tests/repository.spec.ts
+25 error PASS tests/production/production.spec.ts (27.589 s)
+25 error   ● Console
+25 error
+25 error     console.info
+25 error       🗂  Get dependencies...
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error
+25 error     console.info
+25 error       🗃  Resolving files...
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error
+25 error     console.info
+25 error       ✍️  Copying files...
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error
+25 error     console.info
+25 error       ✂️  Cleaning-up files...
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error
+25 error     console.info
+25 error       [1/1] Cleaning modules...
+25 error       info Removed 0 files
+25 error       info Saved 0 MB.
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error
+25 error     console.info
+25 error       Removed :0 KiB
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error
+25 error     console.info
+25 error       🎉  Theia production-ready available in /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpProduction15931Lut5WTkcFILA/prod.
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error
+25 error     console.info
+25 error       🗂  Get dependencies...
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error
+25 error     console.info
+25 error       🗃  Resolving files...
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error
+25 error PASS tests/command.spec.ts
+25 error Switched to a new branch 'main'
+25 error PASS tests/cdn/webpack-loader.spec.ts
+25 error PASS tests/cli-error.spec.ts
+25 error PASS tests/cdn/webpack-customizer.spec.ts (28.059 s)
+25 error   ● Console
+25 error
+25 error     console.info
+25 error       Added in Che chunk:  /Users/ajdc/Sites/lab/che-theia/generator/src/src-gen/frontend/index.js
+25 error
+25 error       at Object.test (src/cdn/webpack-customizer.ts:69:41)
+25 error
+25 error     console.info
+25 error       Added in Che chunk:  /Users/ajdc/Sites/lab/che-theia/che/che-theia-remote-extension/something.js
+25 error
+25 error       at Object.test (src/cdn/webpack-customizer.ts:69:41)
+25 error
+25 error PASS tests/logger.spec.ts
+25 error PASS tests/cdn/boostrap.spec.ts
+25 error PASS tests/cdn.spec.ts
+25 error Switched to a new branch 'main'
+25 error Switched to a new branch 'main'
+25 error Switched to a new branch 'main'
+25 error Switched to a new branch 'main'
+25 error Switched to a new branch 'main'
+25 error Switched to a new branch 'main'
+25 error PASS tests/link.spec.ts (5.443 s)
+25 error Switched to a new branch 'main'
+25 error Switched to a new branch 'main'
+25 error Switched to a new branch 'main'
+25 error Switched to a new branch 'main'
+25 error Switched to a new branch 'main'
+25 error Switched to a new branch 'main'
+25 error Switched to a new branch 'main'
+25 error Switched to a new branch 'main'
+25 error Switched to a new branch 'main'
+25 error Switched to a new branch 'main'
+25 error Switched to a new branch 'main'
+25 error Switched to a new branch 'main'
+25 error Switched to a new branch 'main'
+25 error Switched to a new branch 'main'
+25 error Switched to a new branch 'main'
+25 error Switched to a new branch 'main'
+25 error Switched to a new branch 'main'
+25 error Switched to a new branch 'main'
+25 error Switched to a new branch 'main'
+25 error Switched to a new branch 'main'
+25 error FAIL tests/init-sources/init-sources.spec.ts (45.581 s)
+25 error   ● Console
+25 error
+25 error     console.info
+25 error       Cloning file:///var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions159300eCyTtKUIGlg/source-code1...
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error           at Array.map (<anonymous>)
+25 error
+25 error     console.info
+25 error       Cloning file:///var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions159300eCyTtKUIGlg/source-code2...
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error           at Array.map (<anonymous>)
+25 error
+25 error     console.info
+25 error       Creating symlink from /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions159300eCyTtKUIGlg/che-theia/source-code1/folder1 to /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions159300eCyTtKUIGlg/packages/@che-folder1
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error           at Array.map (<anonymous>)
+25 error           at async Promise.all (index 0)
+25 error
+25 error     console.info
+25 error       Creating symlink from /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions159300eCyTtKUIGlg/che-theia/source-code1/folder2 to /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions159300eCyTtKUIGlg/packages/@che-folder2
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error           at Array.map (<anonymous>)
+25 error           at async Promise.all (index 0)
+25 error
+25 error     console.info
+25 error       Creating symlink from /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions159300eCyTtKUIGlg/che-theia/source-code2 to /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions159300eCyTtKUIGlg/packages/@che-source-code2
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error           at async Promise.all (index 1)
+25 error
+25 error     console.info
+25 error       Creating symlink from /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions159300eCyTtKUIGlg/che-theia/source-code1 to /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions159300eCyTtKUIGlg/plugins/source-code1
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error           at async Promise.all (index 0)
+25 error
+25 error     console.info
+25 error       Creating symlink from /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions159300eCyTtKUIGlg/che-theia/source-code2 to /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions159300eCyTtKUIGlg/plugins/source-code2
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error           at async Promise.all (index 1)
+25 error
+25 error     console.info
+25 error       Cloning file:///var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions15930NtcO3LnMySef/source-code1...
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error           at Array.map (<anonymous>)
+25 error
+25 error     console.info
+25 error       Cloning file:///var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions15930NtcO3LnMySef/source-code2...
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error           at Array.map (<anonymous>)
+25 error
+25 error     console.info
+25 error       Creating symlink from /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions15930NtcO3LnMySef/che-theia/source-code1/folder1 to /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions15930NtcO3LnMySef/packages/@che-folder1
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error           at Array.map (<anonymous>)
+25 error           at async Promise.all (index 0)
+25 error
+25 error     console.info
+25 error       Creating symlink from /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions15930NtcO3LnMySef/che-theia/source-code1/folder2 to /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions15930NtcO3LnMySef/packages/@che-folder2
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error           at Array.map (<anonymous>)
+25 error           at async Promise.all (index 0)
+25 error
+25 error     console.info
+25 error       Creating symlink from /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions15930NtcO3LnMySef/che-theia/source-code2 to /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions15930NtcO3LnMySef/packages/@che-source-code2
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error           at async Promise.all (index 1)
+25 error
+25 error     console.info
+25 error       Creating symlink from /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions15930NtcO3LnMySef/che-theia/source-code1 to /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions15930NtcO3LnMySef/plugins/source-code1
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error           at async Promise.all (index 0)
+25 error
+25 error     console.info
+25 error       Creating symlink from /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions15930NtcO3LnMySef/che-theia/source-code2 to /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions15930NtcO3LnMySef/plugins/source-code2
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error           at async Promise.all (index 1)
+25 error
+25 error     console.info
+25 error       Cloning file:///var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions15930zXj5gIPBRDK4/source-code1...
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error           at Array.map (<anonymous>)
+25 error
+25 error     console.info
+25 error       Cloning file:///var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions15930zXj5gIPBRDK4/source-code2...
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error           at Array.map (<anonymous>)
+25 error
+25 error     console.info
+25 error       Creating symlink from /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions15930zXj5gIPBRDK4/che-theia/source-code1/folder1 to /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions15930zXj5gIPBRDK4/packages/@che-folder1
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error           at Array.map (<anonymous>)
+25 error           at async Promise.all (index 0)
+25 error
+25 error     console.info
+25 error       Creating symlink from /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions15930zXj5gIPBRDK4/che-theia/source-code1/folder2 to /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions15930zXj5gIPBRDK4/packages/@che-folder2
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error           at Array.map (<anonymous>)
+25 error           at async Promise.all (index 0)
+25 error
+25 error     console.info
+25 error       Creating symlink from /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions15930zXj5gIPBRDK4/che-theia/source-code2 to /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions15930zXj5gIPBRDK4/packages/@che-source-code2
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error           at async Promise.all (index 1)
+25 error
+25 error     console.info
+25 error       Creating symlink from /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions15930zXj5gIPBRDK4/che-theia/source-code1 to /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions15930zXj5gIPBRDK4/plugins/source-code1
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error           at async Promise.all (index 0)
+25 error
+25 error     console.info
+25 error       Creating symlink from /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions15930zXj5gIPBRDK4/che-theia/source-code2 to /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions15930zXj5gIPBRDK4/plugins/source-code2
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error           at async Promise.all (index 1)
+25 error
+25 error     console.info
+25 error       copying /Users/ajdc/Sites/lab/che-theia/generator/src/templates/cdn to /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions159304aqbuT7r6Bbb/assembly/cdn
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error
+25 error     console.info
+25 error       distdir=/Users/ajdc/Sites/lab/che-theia/generator/dist
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error
+25 error     console.log
+25 error       Config wasn't provided, downloading default...
+25 error
+25 error       at Function.debug (src/logger.ts:18:21)
+25 error
+25 error     console.info
+25 error       Cloning https://github.com/eclipse-che/che-theia...
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error           at Array.map (<anonymous>)
+25 error
+25 error     console.info
+25 error       Creating symlink from /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions159304aqbuT7r6Bbb/che-theia/extensions/eclipse-che-theia-plugin-remote to /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions159304aqbuT7r6Bbb/packages/@che-eclipse-che-theia-plugin-remote
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error           at Array.map (<anonymous>)
+25 error           at async Promise.all (index 0)
+25 error
+25 error     console.info
+25 error       Creating symlink from /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions159304aqbuT7r6Bbb/che-theia/extensions/eclipse-che-theia-plugin to /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions159304aqbuT7r6Bbb/packages/@che-eclipse-che-theia-plugin
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error           at Array.map (<anonymous>)
+25 error           at async Promise.all (index 0)
+25 error
+25 error     console.info
+25 error       Creating symlink from /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions159304aqbuT7r6Bbb/che-theia/extensions/eclipse-che-theia-plugin-ext to /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions159304aqbuT7r6Bbb/packages/@che-eclipse-che-theia-plugin-ext
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error           at Array.map (<anonymous>)
+25 error           at async Promise.all (index 0)
+25 error
+25 error     console.info
+25 error       Creating symlink from /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions159304aqbuT7r6Bbb/che-theia/extensions/eclipse-che-theia-terminal to /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions159304aqbuT7r6Bbb/packages/@che-eclipse-che-theia-terminal
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error           at Array.map (<anonymous>)
+25 error           at async Promise.all (index 0)
+25 error
+25 error     console.info
+25 error       Creating symlink from /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions159304aqbuT7r6Bbb/che-theia/extensions/eclipse-che-theia-user-preferences to /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions159304aqbuT7r6Bbb/packages/@che-eclipse-che-theia-user-preferences
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error           at Array.map (<anonymous>)
+25 error           at async Promise.all (index 0)
+25 error
+25 error     console.info
+25 error       Creating symlink from /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions159304aqbuT7r6Bbb/che-theia/extensions/che-theia-hosted-plugin-manager-extension to /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions159304aqbuT7r6Bbb/packages/@che-che-theia-hosted-plugin-manager-extension
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error           at Array.map (<anonymous>)
+25 error           at async Promise.all (index 0)
+25 error
+25 error     console.info
+25 error       Creating symlink from /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions159304aqbuT7r6Bbb/che-theia/extensions/eclipse-che-theia-dashboard to /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions159304aqbuT7r6Bbb/packages/@che-eclipse-che-theia-dashboard
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error           at Array.map (<anonymous>)
+25 error           at async Promise.all (index 0)
+25 error
+25 error     console.info
+25 error       Creating symlink from /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions159304aqbuT7r6Bbb/che-theia/extensions/eclipse-che-theia-activity-tracker to /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions159304aqbuT7r6Bbb/packages/@che-eclipse-che-theia-activity-tracker
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error           at Array.map (<anonymous>)
+25 error           at async Promise.all (index 0)
+25 error
+25 error     console.info
+25 error       Creating symlink from /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions159304aqbuT7r6Bbb/che-theia/extensions/eclipse-che-theia-about to /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions159304aqbuT7r6Bbb/packages/@che-eclipse-che-theia-about
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error           at Array.map (<anonymous>)
+25 error           at async Promise.all (index 0)
+25 error
+25 error     console.info
+25 error       Creating symlink from /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions159304aqbuT7r6Bbb/che-theia/extensions/eclipse-che-theia-preferences-provider-extension to /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions159304aqbuT7r6Bbb/packages/@che-eclipse-che-theia-preferences-provider-extension
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error           at Array.map (<anonymous>)
+25 error           at async Promise.all (index 0)
+25 error
+25 error     console.info
+25 error       Creating symlink from /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions159304aqbuT7r6Bbb/che-theia/extensions/eclipse-che-theia-git-provisioner to /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions159304aqbuT7r6Bbb/packages/@che-eclipse-che-theia-git-provisioner
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error           at Array.map (<anonymous>)
+25 error           at async Promise.all (index 0)
+25 error
+25 error     console.info
+25 error       Creating symlink from /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions159304aqbuT7r6Bbb/che-theia/extensions/eclipse-che-theia-logging to /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions159304aqbuT7r6Bbb/packages/@che-eclipse-che-theia-logging
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error           at Array.map (<anonymous>)
+25 error           at async Promise.all (index 0)
+25 error
+25 error     console.info
+25 error       Creating symlink from /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions159304aqbuT7r6Bbb/che-theia/extensions/eclipse-che-theia-messaging to /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions159304aqbuT7r6Bbb/packages/@che-eclipse-che-theia-messaging
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error           at Array.map (<anonymous>)
+25 error           at async Promise.all (index 0)
+25 error
+25 error     console.info
+25 error       Creating symlink from /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions159304aqbuT7r6Bbb/che-theia/extensions/eclipse-che-theia-mini-browser to /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions159304aqbuT7r6Bbb/packages/@che-eclipse-che-theia-mini-browser
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error           at Array.map (<anonymous>)
+25 error           at async Promise.all (index 0)
+25 error
+25 error     console.info
+25 error       Creating symlink from /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions159304aqbuT7r6Bbb/che-theia/extensions/eclipse-che-theia-file-sync-tracker to /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions159304aqbuT7r6Bbb/packages/@che-eclipse-che-theia-file-sync-tracker
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error           at Array.map (<anonymous>)
+25 error           at async Promise.all (index 0)
+25 error
+25 error     console.info
+25 error       Creating symlink from /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions159304aqbuT7r6Bbb/che-theia/extensions/eclipse-che-theia-cli-endpoint to /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions159304aqbuT7r6Bbb/packages/@che-eclipse-che-theia-cli-endpoint
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error           at Array.map (<anonymous>)
+25 error           at async Promise.all (index 0)
+25 error
+25 error     console.info
+25 error       Creating symlink from /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions159304aqbuT7r6Bbb/che-theia/extensions/eclipse-che-theia-workspace to /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions159304aqbuT7r6Bbb/packages/@che-eclipse-che-theia-workspace
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error           at Array.map (<anonymous>)
+25 error           at async Promise.all (index 0)
+25 error
+25 error     console.info
+25 error       Creating symlink from /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions159304aqbuT7r6Bbb/che-theia/extensions/eclipse-che-theia-remote-api to /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions159304aqbuT7r6Bbb/packages/@che-eclipse-che-theia-remote-api
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error           at Array.map (<anonymous>)
+25 error           at async Promise.all (index 0)
+25 error
+25 error     console.info
+25 error       Creating symlink from /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions159304aqbuT7r6Bbb/che-theia/extensions/eclipse-che-theia-remote-impl-che-server to /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions159304aqbuT7r6Bbb/packages/@che-eclipse-che-theia-remote-impl-che-server
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error           at Array.map (<anonymous>)
+25 error           at async Promise.all (index 0)
+25 error
+25 error     console.info
+25 error       Creating symlink from /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions159304aqbuT7r6Bbb/che-theia/extensions/eclipse-che-theia-remote-impl-k8s to /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions159304aqbuT7r6Bbb/packages/@che-eclipse-che-theia-remote-impl-k8s
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error           at Array.map (<anonymous>)
+25 error           at async Promise.all (index 0)
+25 error
+25 error     console.info
+25 error       Creating symlink from /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions159304aqbuT7r6Bbb/che-theia/extensions/eclipse-che-theia-credentials to /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions159304aqbuT7r6Bbb/packages/@che-eclipse-che-theia-credentials
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error           at Array.map (<anonymous>)
+25 error           at async Promise.all (index 0)
+25 error
+25 error     console.info
+25 error       Creating symlink from /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions159304aqbuT7r6Bbb/che-theia/plugins/containers-plugin to /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions159304aqbuT7r6Bbb/plugins/containers-plugin
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error           at Array.map (<anonymous>)
+25 error           at async Promise.all (index 0)
+25 error
+25 error     console.info
+25 error       Creating symlink from /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions159304aqbuT7r6Bbb/che-theia/plugins/ext-plugin to /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions159304aqbuT7r6Bbb/plugins/ext-plugin
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error           at Array.map (<anonymous>)
+25 error           at async Promise.all (index 0)
+25 error
+25 error     console.info
+25 error       Creating symlink from /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions159304aqbuT7r6Bbb/che-theia/plugins/workspace-plugin to /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions159304aqbuT7r6Bbb/plugins/workspace-plugin
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error           at Array.map (<anonymous>)
+25 error           at async Promise.all (index 0)
+25 error
+25 error     console.info
+25 error       Creating symlink from /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions159304aqbuT7r6Bbb/che-theia/plugins/resource-monitor-plugin to /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions159304aqbuT7r6Bbb/plugins/resource-monitor-plugin
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error           at Array.map (<anonymous>)
+25 error           at async Promise.all (index 0)
+25 error
+25 error     console.info
+25 error       Creating symlink from /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions159304aqbuT7r6Bbb/che-theia/plugins/ports-plugin to /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions159304aqbuT7r6Bbb/plugins/ports-plugin
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error           at Array.map (<anonymous>)
+25 error           at async Promise.all (index 0)
+25 error
+25 error     console.info
+25 error       Creating symlink from /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions159304aqbuT7r6Bbb/che-theia/plugins/task-plugin to /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions159304aqbuT7r6Bbb/plugins/task-plugin
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error           at Array.map (<anonymous>)
+25 error           at async Promise.all (index 0)
+25 error
+25 error     console.info
+25 error       Creating symlink from /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions159304aqbuT7r6Bbb/che-theia/plugins/welcome-plugin to /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions159304aqbuT7r6Bbb/plugins/welcome-plugin
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error           at Array.map (<anonymous>)
+25 error           at async Promise.all (index 0)
+25 error
+25 error     console.info
+25 error       Creating symlink from /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions159304aqbuT7r6Bbb/che-theia/plugins/ssh-plugin to /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions159304aqbuT7r6Bbb/plugins/ssh-plugin
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error           at Array.map (<anonymous>)
+25 error           at async Promise.all (index 0)
+25 error
+25 error     console.info
+25 error       Creating symlink from /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions159304aqbuT7r6Bbb/che-theia/plugins/telemetry-plugin to /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions159304aqbuT7r6Bbb/plugins/telemetry-plugin
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error           at Array.map (<anonymous>)
+25 error           at async Promise.all (index 0)
+25 error
+25 error     console.info
+25 error       Creating symlink from /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions159304aqbuT7r6Bbb/che-theia/plugins/github-auth-plugin to /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions159304aqbuT7r6Bbb/plugins/github-auth-plugin
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error           at Array.map (<anonymous>)
+25 error           at async Promise.all (index 0)
+25 error
+25 error     console.info
+25 error       Creating symlink from /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions159304aqbuT7r6Bbb/che-theia/plugins/recommendations-plugin to /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions159304aqbuT7r6Bbb/plugins/recommendations-plugin
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error           at Array.map (<anonymous>)
+25 error           at async Promise.all (index 0)
+25 error
+25 error     console.info
+25 error       Cloning file:///var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions1593000ZPeZ3StVmp/source-code1...
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error           at Array.map (<anonymous>)
+25 error
+25 error     console.info
+25 error       Cloning file:///var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions1593000ZPeZ3StVmp/source-code2...
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error           at Array.map (<anonymous>)
+25 error
+25 error     console.info
+25 error       Creating symlink from /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions1593000ZPeZ3StVmp/che-theia/source-code1/folder1 to /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions1593000ZPeZ3StVmp/packages/@che-folder1
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error           at Array.map (<anonymous>)
+25 error           at async Promise.all (index 0)
+25 error
+25 error     console.info
+25 error       Creating symlink from /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions1593000ZPeZ3StVmp/che-theia/source-code1/folder2 to /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions1593000ZPeZ3StVmp/packages/@che-folder2
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error           at Array.map (<anonymous>)
+25 error           at async Promise.all (index 0)
+25 error
+25 error     console.info
+25 error       Creating symlink from /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions1593000ZPeZ3StVmp/che-theia/source-code2 to /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions1593000ZPeZ3StVmp/packages/@che-source-code2
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error           at async Promise.all (index 1)
+25 error
+25 error     console.info
+25 error       Creating symlink from /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions1593000ZPeZ3StVmp/che-theia/source-code1 to /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions1593000ZPeZ3StVmp/plugins/source-code1
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error           at async Promise.all (index 0)
+25 error
+25 error     console.info
+25 error       Creating symlink from /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions1593000ZPeZ3StVmp/che-theia/source-code2 to /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions1593000ZPeZ3StVmp/plugins/source-code2
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error           at async Promise.all (index 1)
+25 error
+25 error     console.log
+25 error       Config wasn't provided, downloading default...
+25 error
+25 error       at Function.debug (src/logger.ts:18:21)
+25 error
+25 error     console.log
+25 error       Config wasn't provided, downloading default...
+25 error
+25 error       at Function.debug (src/logger.ts:18:21)
+25 error
+25 error     console.error
+25 error       Error: Error: getaddrinfo ENOTFOUND foobarfoo.com
+25 error           at Object.dispatchError (/Users/ajdc/Sites/lab/che-theia/node_modules/jsdom/lib/jsdom/living/xhr/xhr-utils.js:63:19)
+25 error           at Request.<anonymous> (/Users/ajdc/Sites/lab/che-theia/node_modules/jsdom/lib/jsdom/living/xhr/XMLHttpRequest-impl.js:655:18)
+25 error           at Request.emit (events.js:327:22)
+25 error           at ClientRequest.<anonymous> (/Users/ajdc/Sites/lab/che-theia/node_modules/jsdom/lib/jsdom/living/helpers/http-request.js:121:14)
+25 error           at ClientRequest.emit (events.js:315:20)
+25 error           at TLSSocket.socketErrorListener (_http_client.js:426:9)
+25 error           at TLSSocket.emit (events.js:315:20)
+25 error           at emitErrorNT (internal/streams/destroy.js:92:8)
+25 error           at emitErrorAndCloseNT (internal/streams/destroy.js:60:3)
+25 error           at processTicksAndRejections (internal/process/task_queues.js:84:21) undefined
+25 error
+25 error       at VirtualConsole.<anonymous> (../node_modules/jsdom/lib/jsdom/virtual-console.js:29:45)
+25 error       at Object.dispatchError (../node_modules/jsdom/lib/jsdom/living/xhr/xhr-utils.js:66:53)
+25 error       at Request.<anonymous> (../node_modules/jsdom/lib/jsdom/living/xhr/XMLHttpRequest-impl.js:655:18)
+25 error       at ClientRequest.<anonymous> (../node_modules/jsdom/lib/jsdom/living/helpers/http-request.js:121:14)
+25 error
+25 error     console.info
+25 error       Cloning file:///var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions15930oz2yn632v8qF/source-code1...
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error           at Array.map (<anonymous>)
+25 error
+25 error     console.info
+25 error       Cloning file:///var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions15930oz2yn632v8qF/source-code2...
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error           at Array.map (<anonymous>)
+25 error
+25 error     console.info
+25 error       Creating symlink from /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions15930oz2yn632v8qF/che-theia/source-code1/folder1 to /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions15930oz2yn632v8qF/packages/@che-folder1
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error           at Array.map (<anonymous>)
+25 error           at async Promise.all (index 0)
+25 error
+25 error     console.info
+25 error       Creating symlink from /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions15930oz2yn632v8qF/che-theia/source-code1/folder2 to /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions15930oz2yn632v8qF/packages/@che-folder2
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error           at Array.map (<anonymous>)
+25 error           at async Promise.all (index 0)
+25 error
+25 error     console.info
+25 error       Creating symlink from /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions15930oz2yn632v8qF/che-theia/source-code2 to /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions15930oz2yn632v8qF/packages/@che-source-code2
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error           at async Promise.all (index 1)
+25 error
+25 error     console.info
+25 error       Creating symlink from /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions15930oz2yn632v8qF/che-theia/source-code1/plugin-folder1 to /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions15930oz2yn632v8qF/plugins/plugin-folder1
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error           at Array.map (<anonymous>)
+25 error           at async Promise.all (index 0)
+25 error
+25 error     console.info
+25 error       Creating symlink from /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions15930oz2yn632v8qF/che-theia/source-code1/plugin-folder2 to /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions15930oz2yn632v8qF/plugins/plugin-folder2
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error           at Array.map (<anonymous>)
+25 error           at async Promise.all (index 0)
+25 error
+25 error     console.info
+25 error       Creating symlink from /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions15930oz2yn632v8qF/che-theia/source-code2 to /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions15930oz2yn632v8qF/plugins/source-code2
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error           at async Promise.all (index 1)
+25 error
+25 error     console.info
+25 error       Skipping cloning sources for /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions15930F8dTAHMSdwkh/source-code1 already provided...
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error
+25 error     console.info
+25 error       copying /Users/ajdc/Sites/lab/che-theia/generator/src/templates/cdn to /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions15930IblW3p61b1rM/assembly/cdn
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error
+25 error     console.info
+25 error       distdir=/Users/ajdc/Sites/lab/che-theia/generator/dist
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error
+25 error     console.log
+25 error       Config wasn't provided, downloading default...
+25 error
+25 error       at Function.debug (src/logger.ts:18:21)
+25 error
+25 error     console.info
+25 error       Cloning https://github.com/eclipse-che/che-theia...
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error           at Array.map (<anonymous>)
+25 error
+25 error     console.info
+25 error       Creating symlink from /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions15930IblW3p61b1rM/che-theia/extensions/eclipse-che-theia-plugin-remote to /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions15930IblW3p61b1rM/packages/@che-eclipse-che-theia-plugin-remote
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error           at Array.map (<anonymous>)
+25 error           at async Promise.all (index 0)
+25 error
+25 error     console.info
+25 error       Creating symlink from /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions15930IblW3p61b1rM/che-theia/extensions/eclipse-che-theia-plugin to /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions15930IblW3p61b1rM/packages/@che-eclipse-che-theia-plugin
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error           at Array.map (<anonymous>)
+25 error           at async Promise.all (index 0)
+25 error
+25 error     console.info
+25 error       Creating symlink from /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions15930IblW3p61b1rM/che-theia/extensions/eclipse-che-theia-plugin-ext to /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions15930IblW3p61b1rM/packages/@che-eclipse-che-theia-plugin-ext
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error           at Array.map (<anonymous>)
+25 error           at async Promise.all (index 0)
+25 error
+25 error     console.info
+25 error       Creating symlink from /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions15930IblW3p61b1rM/che-theia/extensions/eclipse-che-theia-terminal to /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions15930IblW3p61b1rM/packages/@che-eclipse-che-theia-terminal
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error           at Array.map (<anonymous>)
+25 error           at async Promise.all (index 0)
+25 error
+25 error     console.info
+25 error       Creating symlink from /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions15930IblW3p61b1rM/che-theia/extensions/eclipse-che-theia-user-preferences to /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions15930IblW3p61b1rM/packages/@che-eclipse-che-theia-user-preferences
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error           at Array.map (<anonymous>)
+25 error           at async Promise.all (index 0)
+25 error
+25 error     console.info
+25 error       Creating symlink from /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions15930IblW3p61b1rM/che-theia/extensions/che-theia-hosted-plugin-manager-extension to /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions15930IblW3p61b1rM/packages/@che-che-theia-hosted-plugin-manager-extension
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error           at Array.map (<anonymous>)
+25 error           at async Promise.all (index 0)
+25 error
+25 error     console.info
+25 error       Creating symlink from /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions15930IblW3p61b1rM/che-theia/extensions/eclipse-che-theia-dashboard to /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions15930IblW3p61b1rM/packages/@che-eclipse-che-theia-dashboard
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error           at Array.map (<anonymous>)
+25 error           at async Promise.all (index 0)
+25 error
+25 error     console.info
+25 error       Creating symlink from /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions15930IblW3p61b1rM/che-theia/extensions/eclipse-che-theia-activity-tracker to /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions15930IblW3p61b1rM/packages/@che-eclipse-che-theia-activity-tracker
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error           at Array.map (<anonymous>)
+25 error           at async Promise.all (index 0)
+25 error
+25 error     console.info
+25 error       Creating symlink from /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions15930IblW3p61b1rM/che-theia/extensions/eclipse-che-theia-about to /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions15930IblW3p61b1rM/packages/@che-eclipse-che-theia-about
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error           at Array.map (<anonymous>)
+25 error           at async Promise.all (index 0)
+25 error
+25 error     console.info
+25 error       Creating symlink from /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions15930IblW3p61b1rM/che-theia/extensions/eclipse-che-theia-preferences-provider-extension to /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions15930IblW3p61b1rM/packages/@che-eclipse-che-theia-preferences-provider-extension
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error           at Array.map (<anonymous>)
+25 error           at async Promise.all (index 0)
+25 error
+25 error     console.info
+25 error       Creating symlink from /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions15930IblW3p61b1rM/che-theia/extensions/eclipse-che-theia-git-provisioner to /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions15930IblW3p61b1rM/packages/@che-eclipse-che-theia-git-provisioner
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error           at Array.map (<anonymous>)
+25 error           at async Promise.all (index 0)
+25 error
+25 error     console.info
+25 error       Creating symlink from /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions15930IblW3p61b1rM/che-theia/extensions/eclipse-che-theia-logging to /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions15930IblW3p61b1rM/packages/@che-eclipse-che-theia-logging
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error           at Array.map (<anonymous>)
+25 error           at async Promise.all (index 0)
+25 error
+25 error     console.info
+25 error       Creating symlink from /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions15930IblW3p61b1rM/che-theia/extensions/eclipse-che-theia-messaging to /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions15930IblW3p61b1rM/packages/@che-eclipse-che-theia-messaging
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error           at Array.map (<anonymous>)
+25 error           at async Promise.all (index 0)
+25 error
+25 error     console.info
+25 error       Creating symlink from /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions15930IblW3p61b1rM/che-theia/extensions/eclipse-che-theia-mini-browser to /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions15930IblW3p61b1rM/packages/@che-eclipse-che-theia-mini-browser
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error           at Array.map (<anonymous>)
+25 error           at async Promise.all (index 0)
+25 error
+25 error     console.info
+25 error       Creating symlink from /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions15930IblW3p61b1rM/che-theia/extensions/eclipse-che-theia-file-sync-tracker to /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions15930IblW3p61b1rM/packages/@che-eclipse-che-theia-file-sync-tracker
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error           at Array.map (<anonymous>)
+25 error           at async Promise.all (index 0)
+25 error
+25 error     console.info
+25 error       Creating symlink from /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions15930IblW3p61b1rM/che-theia/extensions/eclipse-che-theia-cli-endpoint to /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions15930IblW3p61b1rM/packages/@che-eclipse-che-theia-cli-endpoint
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error           at Array.map (<anonymous>)
+25 error           at async Promise.all (index 0)
+25 error
+25 error     console.info
+25 error       Creating symlink from /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions15930IblW3p61b1rM/che-theia/extensions/eclipse-che-theia-workspace to /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions15930IblW3p61b1rM/packages/@che-eclipse-che-theia-workspace
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error           at Array.map (<anonymous>)
+25 error           at async Promise.all (index 0)
+25 error
+25 error     console.info
+25 error       Creating symlink from /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions15930IblW3p61b1rM/che-theia/extensions/eclipse-che-theia-remote-api to /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions15930IblW3p61b1rM/packages/@che-eclipse-che-theia-remote-api
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error           at Array.map (<anonymous>)
+25 error           at async Promise.all (index 0)
+25 error
+25 error     console.info
+25 error       Creating symlink from /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions15930IblW3p61b1rM/che-theia/extensions/eclipse-che-theia-remote-impl-che-server to /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions15930IblW3p61b1rM/packages/@che-eclipse-che-theia-remote-impl-che-server
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error           at Array.map (<anonymous>)
+25 error           at async Promise.all (index 0)
+25 error
+25 error     console.info
+25 error       Creating symlink from /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions15930IblW3p61b1rM/che-theia/extensions/eclipse-che-theia-remote-impl-k8s to /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions15930IblW3p61b1rM/packages/@che-eclipse-che-theia-remote-impl-k8s
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error           at Array.map (<anonymous>)
+25 error           at async Promise.all (index 0)
+25 error
+25 error     console.info
+25 error       Creating symlink from /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions15930IblW3p61b1rM/che-theia/extensions/eclipse-che-theia-credentials to /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions15930IblW3p61b1rM/packages/@che-eclipse-che-theia-credentials
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error           at Array.map (<anonymous>)
+25 error           at async Promise.all (index 0)
+25 error
+25 error     console.info
+25 error       Creating symlink from /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions15930IblW3p61b1rM/che-theia/plugins/containers-plugin to /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions15930IblW3p61b1rM/plugins/containers-plugin
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error           at Array.map (<anonymous>)
+25 error           at async Promise.all (index 0)
+25 error
+25 error     console.info
+25 error       Creating symlink from /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions15930IblW3p61b1rM/che-theia/plugins/ext-plugin to /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions15930IblW3p61b1rM/plugins/ext-plugin
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error           at Array.map (<anonymous>)
+25 error           at async Promise.all (index 0)
+25 error
+25 error     console.info
+25 error       Creating symlink from /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions15930IblW3p61b1rM/che-theia/plugins/workspace-plugin to /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions15930IblW3p61b1rM/plugins/workspace-plugin
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error           at Array.map (<anonymous>)
+25 error           at async Promise.all (index 0)
+25 error
+25 error     console.info
+25 error       Creating symlink from /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions15930IblW3p61b1rM/che-theia/plugins/resource-monitor-plugin to /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions15930IblW3p61b1rM/plugins/resource-monitor-plugin
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error           at Array.map (<anonymous>)
+25 error           at async Promise.all (index 0)
+25 error
+25 error     console.info
+25 error       Creating symlink from /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions15930IblW3p61b1rM/che-theia/plugins/ports-plugin to /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions15930IblW3p61b1rM/plugins/ports-plugin
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error           at Array.map (<anonymous>)
+25 error           at async Promise.all (index 0)
+25 error
+25 error     console.info
+25 error       Creating symlink from /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions15930IblW3p61b1rM/che-theia/plugins/task-plugin to /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions15930IblW3p61b1rM/plugins/task-plugin
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error           at Array.map (<anonymous>)
+25 error           at async Promise.all (index 0)
+25 error
+25 error     console.info
+25 error       Creating symlink from /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions15930IblW3p61b1rM/che-theia/plugins/welcome-plugin to /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions15930IblW3p61b1rM/plugins/welcome-plugin
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error           at Array.map (<anonymous>)
+25 error           at async Promise.all (index 0)
+25 error
+25 error     console.info
+25 error       Creating symlink from /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions15930IblW3p61b1rM/che-theia/plugins/ssh-plugin to /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions15930IblW3p61b1rM/plugins/ssh-plugin
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error           at Array.map (<anonymous>)
+25 error           at async Promise.all (index 0)
+25 error
+25 error     console.info
+25 error       Creating symlink from /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions15930IblW3p61b1rM/che-theia/plugins/telemetry-plugin to /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions15930IblW3p61b1rM/plugins/telemetry-plugin
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error           at Array.map (<anonymous>)
+25 error           at async Promise.all (index 0)
+25 error
+25 error     console.info
+25 error       Creating symlink from /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions15930IblW3p61b1rM/che-theia/plugins/github-auth-plugin to /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions15930IblW3p61b1rM/plugins/github-auth-plugin
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error           at Array.map (<anonymous>)
+25 error           at async Promise.all (index 0)
+25 error
+25 error     console.info
+25 error       Creating symlink from /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions15930IblW3p61b1rM/che-theia/plugins/recommendations-plugin to /var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions15930IblW3p61b1rM/plugins/recommendations-plugin
+25 error
+25 error       at Function.info (src/logger.ts:23:22)
+25 error           at Array.map (<anonymous>)
+25 error           at async Promise.all (index 0)
+25 error
+25 error   ● Test Extensions › use default extensions
+25 error
+25 error     ENOENT: no such file or directory, lstat '/private/var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions159304aqbuT7r6Bbb/che-theia/extensions/smartclide-deployment-widget'
+25 error
+25 error       59 |     const preparedAssemblyReferences = assemblyReferences.map(reference => {
+25 error       60 |         const absolutePath = path.resolve(assemblyFolder, reference.path);
+25 error     > 61 |         const relativePath = path.posix.relative(fs.realpathSync(assemblyFolder), fs.realpathSync(absolutePath));
+25 error          |                                                                                      ^
+25 error       62 |         return { path: relativePath };
+25 error       63 |     });
+25 error       64 |
+25 error
+25 error       at src/resolve-tsconfigs.ts:61:86
+25 error           at Array.map (<anonymous>)
+25 error       at Object.updateAssemblyTsConfigFile (src/resolve-tsconfigs.ts:59:59)
+25 error       at InitSources.generate (src/init-sources.ts:129:9)
+25 error       at InitSources.readConfigurationAndGenerate (src/init-sources.ts:383:9)
+25 error       at Object.<anonymous> (tests/init-sources/init-sources.spec.ts:299:9)
+25 error
+25 error   ● Test Extensions › check resolving typescript references
+25 error
+25 error     ENOENT: no such file or directory, lstat '/private/var/folders/2_/rfrrp7w17hxf_gx5vnfpbglw0000gn/T/tmpExtensions15930IblW3p61b1rM/che-theia/extensions/smartclide-deployment-widget'
+25 error
+25 error       59 |     const preparedAssemblyReferences = assemblyReferences.map(reference => {
+25 error       60 |         const absolutePath = path.resolve(assemblyFolder, reference.path);
+25 error     > 61 |         const relativePath = path.posix.relative(fs.realpathSync(assemblyFolder), fs.realpathSync(absolutePath));
+25 error          |                                                                                      ^
+25 error       62 |         return { path: relativePath };
+25 error       63 |     });
+25 error       64 |
+25 error
+25 error       at src/resolve-tsconfigs.ts:61:86
+25 error           at Array.map (<anonymous>)
+25 error       at Object.updateAssemblyTsConfigFile (src/resolve-tsconfigs.ts:59:59)
+25 error       at InitSources.generate (src/init-sources.ts:129:9)
+25 error       at InitSources.readConfigurationAndGenerate (src/init-sources.ts:383:9)
+25 error       at Object.<anonymous> (tests/init-sources/init-sources.spec.ts:531:9)
+25 error
+25 error Test Suites: 1 failed, 15 passed, 16 total
+25 error Tests:       2 failed, 72 passed, 74 total
+25 error Snapshots:   0 total
+25 error Time:        67.878 s
+25 error Ran all test suites.
+25 error Force exiting Jest: Have you considered using `--detectOpenHandles` to detect async operations that kept running after all tests finished?
+25 error error Command failed with exit code 1.
+25 error error Command failed with exit code 1.
+25 error error Command failed with exit code 1.
+25 error
+25 error $ yarn run clean && yarn run build
+25 error $ rimraf dist
+25 error $ yarn run compile && yarn run format && yarn run lint && yarn run test
+25 error $ tsc && chmod +x dist/index.js
+25 error $ if-env SKIP_FORMAT=true && echo 'skip format check' || prettier --check '{src,tests}/**/*.ts' package.json
+25 error Checking formatting...
+25 error All matched files use Prettier code style!
+25 error $ if-env SKIP_LINT=true && echo 'skip lint check' || eslint --cache=true --no-error-on-unmatched-pattern=true '{src,tests}/**/*.ts'
+25 error
+25 error /Users/ajdc/Sites/lab/che-theia/generator/src/cdn/base.ts
+25 error   75:24  warning  'charset' is deprecated.   deprecation/deprecation
+25 error
+25 error ✖ 1 problem (0 errors, 1 warning)
+25 error
+25 error $ if-env SKIP_TEST=true && echo 'skip test' || jest --forceExit
+25 error -------------------------|---------|----------|---------|---------|-------------------
+25 error File                     | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s
+25 error -------------------------|---------|----------|---------|---------|-------------------
+25 error All files                |   78.95 |    68.35 |   82.12 |    78.7 |
+25 error  src                     |   75.75 |    57.14 |   79.69 |   75.44 |
+25 error   cdn.ts                 |     100 |      100 |     100 |     100 |
+25 error   clean.ts               |     100 |       75 |     100 |     100 | 45
+25 error   cli-error.ts           |     100 |      100 |     100 |     100 |
+25 error   command.ts             |     100 |      100 |     100 |     100 |
+25 error   generate-assembly.ts   |   58.93 |        0 |      50 |   58.93 | 39-74
+25 error   index.ts               |       0 |      100 |     100 |       0 | 12-14
+25 error   init-sources.ts        |   98.09 |    84.21 |     100 |   98.09 | 154-157,401
+25 error   init.ts                |   31.25 |     6.67 |   30.77 |   32.26 | 58-131
+25 error   json-utils.ts          |      25 |        0 |       0 |      25 | 20-23,28-33
+25 error   link.ts                |   96.43 |       50 |     100 |   96.43 | 52
+25 error   logger.ts              |     100 |      100 |     100 |     100 |
+25 error   production.ts          |     100 |      100 |     100 |     100 |
+25 error   repository.ts          |     100 |    77.78 |     100 |     100 | 50,58
+25 error   resolve-tsconfigs.ts   |     100 |     87.5 |     100 |     100 | 119,135
+25 error   update-dependencies.ts |       0 |        0 |       0 |       0 | 16-83
+25 error   yargs.ts               |       0 |        0 |       0 |       0 | 11-142
+25 error   yarn.ts                |   95.06 |    84.38 |    87.5 |   94.81 | 224-226,233-234
+25 error  src/cdn                 |   94.96 |      100 |   95.65 |   94.89 |
+25 error   base.ts                |   96.08 |      100 |     100 |      96 | 98-99
+25 error   bootstrap.ts           |     100 |      100 |     100 |     100 |
+25 error   html-template.ts       |     100 |      100 |     100 |     100 |
+25 error   webpack-customizer.ts  |     100 |      100 |     100 |     100 |
+25 error   webpack-loader.ts      |     100 |      100 |     100 |     100 |
+25 error   webpack.config.ts      |       0 |      100 |       0 |       0 | 11-20
+25 error -------------------------|---------|----------|---------|---------|-------------------
+25 error info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+25 error info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+25 error info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+25 error
+25 error     at /Users/ajdc/Sites/lab/che-theia/node_modules/lerna/node_modules/execa/index.js:236:11

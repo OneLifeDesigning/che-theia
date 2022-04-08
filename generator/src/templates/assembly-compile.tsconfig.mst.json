@@ -53,6 +53,9 @@
       },
       {
          "path": "{{ packageRefPrefix}}eclipse-che-theia-credentials"
+      },
+      {
+         "path": "{{ packageRefPrefix}}smartclide-deployment-widget"
       }
    ]
 }
